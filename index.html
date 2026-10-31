@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deck District</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: a single readable column, like a printed policy leaflet; two sections. */
+:root {
+  --bg: #f6f6f9; --fg: #1d1d2b; --muted: #5d5d73; --rule: #d9d9e4; --accent: #c8102e;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #13131c; --fg: #ececf4; --muted: #a3a3ba; --rule: #2e2e40; --accent: #ff5a6e; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #13131c; --fg: #ececf4; --muted: #a3a3ba; --rule: #2e2e40; --accent: #ff5a6e; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 48px 64px; }
+main { max-width: 640px; margin: 0 auto; display: grid; gap: 40px; }
+header { display: grid; gap: 8px; border-bottom: 3px solid var(--accent); padding-bottom: 20px; }
+.eyebrow { font-family: var(--display); font-weight: 500; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0; }
+h1, h2 { font-family: var(--display); font-weight: 700; text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.35rem; }
+section { display: grid; gap: 12px; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2em; display: grid; gap: 6px; }
+.meta { color: var(--muted); font-size: 15px; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Deck District · UK Pokémon cards</p>
+    <h1>Deck District</h1>
+    <nav class="meta"><a href="/">Home</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a></nav>
+  </header>
+  <section>
+    <h2>Pokémon card prices, every day</h2>
+    <p>Deck District is a UK Pokémon card shop. We post short videos on TikTok, YouTube and Instagram: guess the price, top 5s, higher-or-lower and graded card values.</p>
+    <p>Find our shop and socials at <a href="https://linktr.ee/DeckDistrict">linktr.ee/DeckDistrict</a>.</p>
+  </section>
+  <section>
+    <h2>Deck District Stats</h2>
+    <p>Deck District Stats is our private tool that reads the view and follower numbers for our own accounts. See its <a href="/terms/">Terms of Service</a> and <a href="/privacy/">Privacy Policy</a>.</p>
+  </section>
+  <p class="meta">Last updated 31 October 2026 · <a href="https://linktr.ee/DeckDistrict">linktr.ee/DeckDistrict</a></p>
+</main>
+</body>
+</html>
